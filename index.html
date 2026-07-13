@@ -499,7 +499,7 @@
       margin-top: 8px;
     }
     .highlight-card {
-      min-height: 310px;
+      min-height: 200px;
       padding: clamp(24px, 3vw, 34px);
       border-radius: 28px;
       position: relative;
@@ -513,18 +513,6 @@
     }
     .highlight-card h3 { margin: 0; max-width: 14ch; font-size: clamp(28px, 2.7vw, 38px); line-height: 1.03; letter-spacing: -.045em; }
     .highlight-card p { margin: 0; max-width: 42ch; color: var(--muted); font-size: 16px; line-height: 1.48; font-weight: 500; }
-    .highlight-art {
-      margin-top: auto;
-      height: 108px;
-      border-radius: 22px;
-      border: 1px solid rgba(15,23,40,.05);
-      background-color: #f8fafc;
-      overflow: hidden;
-    }
-    .art-data { background: radial-gradient(circle at 25% 62%, rgba(0,113,227,.58), transparent 24%), radial-gradient(circle at 62% 34%, rgba(141,114,255,.5), transparent 26%), linear-gradient(180deg, #f9fbff, #edf4ff); }
-    .art-voice { background: repeating-radial-gradient(ellipse at 50% 100%, transparent 0 16px, rgba(0,113,227,.14) 16px 19px), linear-gradient(180deg, #fbfdff, #eef7ff); }
-    .art-agent { background: radial-gradient(circle at 74% 62%, rgba(0,113,227,.40), transparent 22%), radial-gradient(circle at 34% 70%, rgba(141,114,255,.45), transparent 25%), linear-gradient(180deg, #ffffff, #f5f7fb); }
-    .art-flow { background: linear-gradient(135deg, transparent 8%, rgba(0,113,227,.14) 8% 18%, transparent 18% 28%, rgba(141,114,255,.16) 28% 38%, transparent 38% 48%, rgba(73,184,255,.18) 48% 58%, transparent 58%), linear-gradient(180deg, #fbfcff, #f3f7fb); }
     .mini-chip {
       display: inline-flex;
       align-items: center;
@@ -1196,7 +1184,7 @@
       .card-4 { top: 282px; }
       .highlights, .outcomes, .story, .industries { padding-block: 82px; }
       .highlights-grid { grid-template-columns: 1fr; gap: 16px; }
-      .highlight-card { min-height: 280px; border-radius: 24px; }
+      .highlight-card { min-height: 190px; border-radius: 24px; }
       .metric-card, .metric-card:nth-child(n) { grid-column: span 6; min-height: 240px; }
       .story-grid { display: block; }
       .story-steps { padding-bottom: 0; }
@@ -1229,10 +1217,9 @@
       .highlights-head { align-items: flex-start; flex-direction: column; }
       .highlights-head h2 { font-size: 38px; }
       .highlights-intro { text-align: left; max-width: none; }
-      .highlight-card { min-height: 260px; padding: 26px; }
+      .highlight-card { min-height: auto; padding: 26px; }
       .highlight-card h3 { font-size: 32px; }
       .highlight-card p { font-size: 16px; }
-      .highlight-art { height: 92px; }
       .metric-grid { gap: 12px; margin-top: 50px; }
       .metric-card, .metric-card:nth-child(n) { grid-column: 1 / -1; min-height: 210px; padding: 26px; }
       .industry-shell { padding: 10px; border-radius: 26px; }
@@ -1376,25 +1363,21 @@
             <span class="mini-chip"><i></i> Analytics</span>
             <h3>Your data becomes a decision engine.</h3>
             <p>Bring every source together, apply AI-driven analytics, and let anyone ask questions in plain language.</p>
-            <div class="highlight-art art-data"></div>
           </article>
           <article class="highlight-card">
             <span class="mini-chip"><i></i> Voice & conversation</span>
             <h3>Every interaction gets smarter.</h3>
             <p>Voice agents, real-time coaching, and conversation intelligence deliver more consistent experiences across every channel.</p>
-            <div class="highlight-art art-voice"></div>
           </article>
           <article class="highlight-card">
             <span class="mini-chip"><i></i> Product AI</span>
             <h3>Add agents without rebuilding everything.</h3>
             <p>We embed useful AI directly into the products and workflows your customers already understand.</p>
-            <div class="highlight-art art-agent"></div>
           </article>
           <article class="highlight-card">
             <span class="mini-chip"><i></i> Operations</span>
             <h3>Less friction. More flow.</h3>
             <p>Automate repetitive processes and orchestrate work on platforms designed to scale without scaling headcount.</p>
-            <div class="highlight-art art-flow"></div>
           </article>
         </div>
       </div>
